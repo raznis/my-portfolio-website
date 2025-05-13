@@ -2,83 +2,123 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    box-sizing: border-box;
+    /* Includes padding and border in the element's total width and height */
 }
 
 html {
-    scroll-behavior: smooth; /* Smooth scrolling for #hash links */
+    scroll-behavior: smooth;
+    /* Smooth scrolling for #hash links */
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Choose a clean, common font. Or explore Google Fonts later. */
-    line-height: 1.6; /* Improves readability */
-    color: #333; /* Dark gray, softer than pure black */
-    background-color: #f9f9f9; /* Light off-white background */
+    font-family: 'Arial', sans-serif;
+    /* Choose a clean, common font. Or explore Google Fonts later. */
+    line-height: 1.6;
+    /* Improves readability */
+    color: #333;
+    /* Dark gray, softer than pure black */
+    background-color: #f9f9f9;
+    /* Light off-white background */
 }
 
 .container {
-    width: 90%; /* Content takes 90% of viewport width */
-    max-width: 960px; /* But not more than 960px */
-    margin: 0 auto; /* Centers the container */
-    padding: 20px 0; /* Adds some top/bottom padding to sections */
+    width: 90%;
+    /* Content takes 90% of viewport width */
+    max-width: 960px;
+    /* But not more than 960px */
+    margin: 0 auto;
+    /* Centers the container */
+    padding: 20px 0;
+    /* Adds some top/bottom padding to sections */
 }
 
-h1, h2, h3 {
-    color: #2c3e50; /* A slightly desaturated blue for headings */
-    margin-bottom: 0.75em; /* Space below headings */
+h1,
+h2,
+h3 {
+    color: #2c3e50;
+    /* A slightly desaturated blue for headings */
+    margin-bottom: 0.75em;
+    /* Space below headings */
 }
 
-h1 { font-size: 2.5em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.5em; }
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
 
 p {
-    margin-bottom: 1em; /* Space below paragraphs */
+    margin-bottom: 1em;
+    /* Space below paragraphs */
 }
 
 a {
-    color: #3498db; /* A clear blue for links */
-    text-decoration: none; /* Remove underline by default */
+    color: #3498db;
+    /* A clear blue for links */
+    text-decoration: none;
+    /* Remove underline by default */
 }
 
 a:hover {
-    text-decoration: underline; /* Add underline on hover for clarity */
+    text-decoration: underline;
+    /* Add underline on hover for clarity */
 }
 
 img {
-    max-width: 100%; /* Makes images responsive by default */
-    height: auto;   /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Makes images responsive by default */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 header {
-    background-color: #34495e; /* Dark blue-gray background */
-    color: #ecf0f1; /* Light text color */
+    background-color: #34495e;
+    /* Dark blue-gray background */
+    color: #ecf0f1;
+    /* Light text color */
     padding: 1em 0;
-    position: sticky; /* Makes the header stick to the top on scroll */
+    position: sticky;
+    /* Makes the header stick to the top on scroll */
     top: 0;
-    z-index: 1000; /* Ensures it stays above other content */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    /* Ensures it stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Puts space between h1 and nav */
-    align-items: center; /* Vertically aligns items in the middle */
-    padding: 0 20px; /* Override container's top/bottom padding if needed */
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Puts space between h1 and nav */
+    align-items: center;
+    /* Vertically aligns items in the middle */
+    padding: 0 20px;
+    /* Override container's top/bottom padding if needed */
 }
 
 header h1 {
-    margin-bottom: 0; /* Remove default margin for h1 inside header */
-    font-size: 1.8em; /* Adjust size for header context */
+    margin-bottom: 0;
+    /* Remove default margin for h1 inside header */
+    font-size: 1.8em;
+    /* Adjust size for header context */
     color: #ecf0f1;
 }
 
 header nav ul {
-    list-style: none; /* Remove bullet points */
+    list-style: none;
+    /* Remove bullet points */
 }
 
 header nav ul li {
-    display: inline-block; /* Arrange links horizontally */
+    display: inline-block;
+    /* Arrange links horizontally */
     margin-left: 20px;
 }
 
@@ -88,29 +128,38 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #bdc3c7; /* Lighter color on hover */
+    color: #bdc3c7;
+    /* Lighter color on hover */
     text-decoration: none;
 }
 
 section {
-    padding: 40px 0; /* Add more vertical padding to sections */
+    padding: 40px 0;
+    /* Add more vertical padding to sections */
     /* .container inside section already handles horizontal padding/centering */
 }
 
 section#about {
-    background-color: #ffffff; /* White background for About section */
+    background-color: #ffffff;
+    /* White background for About section */
     /* Optional: Add a subtle border or shadow if desired */
 }
 
-.profile-photo { /* If you added a photo */
-    display: block; /* Or float: left; margin-right: 20px; */
-    max-width: 200px; /* Adjust size */
-    border-radius: 50%; /* Makes it circular */
-    margin: 0 auto 20px auto; /* Centers it if it's a block element */
+.profile-photo {
+    /* If you added a photo */
+    display: block;
+    /* Or float: left; margin-right: 20px; */
+    max-width: 200px;
+    /* Adjust size */
+    border-radius: 50%;
+    /* Makes it circular */
+    margin: 0 auto 20px auto;
+    /* Centers it if it's a block element */
 }
 
 section#projects {
-    background-color: #eef1f2; /* Slightly different background for contrast */
+    background-color: #eef1f2;
+    /* Slightly different background for contrast */
 }
 
 .projects-grid {
@@ -118,7 +167,8 @@ section#projects {
     /* Creates as many columns as can fit with a minimum width of 300px,
        and a maximum of 1fr (fraction of available space) */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px; /* Space between cards */
+    gap: 25px;
+    /* Space between cards */
 }
 
 .project-card {
@@ -126,20 +176,24 @@ section#projects {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* For hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* For hover effect */
 }
 
 .project-card:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .project-card h3 {
-    margin-top: 0; /* Remove top margin if any */
+    margin-top: 0;
+    /* Remove top margin if any */
 }
 
-.project-card p strong { /* Style "Technologies:" text */
+.project-card p strong {
+    /* Style "Technologies:" text */
     color: #555;
 }
 
@@ -149,7 +203,8 @@ section#projects {
 
 .button {
     display: inline-block;
-    background-color: #3498db; /* Primary button color */
+    background-color: #3498db;
+    /* Primary button color */
     color: #ffffff;
     padding: 10px 15px;
     border-radius: 5px;
@@ -160,24 +215,28 @@ section#projects {
 }
 
 .button:hover {
-    background-color: #2980b9; /* Darker shade on hover */
+    background-color: #2980b9;
+    /* Darker shade on hover */
     color: #ffffff;
     text-decoration: none;
 }
 
 .project-card .huggingface-embed iframe {
-    border-radius: 5px; /* Optional: style the iframe if embedded */
+    border-radius: 5px;
+    /* Optional: style the iframe if embedded */
     margin-top: 15px;
 }
 
 section#contact {
     background-color: #ffffff;
-    text-align: center; /* Center content in contact section */
+    text-align: center;
+    /* Center content in contact section */
 }
 
 .contact-links {
     list-style: none;
-    padding-left: 0; /* Remove default padding for ul */
+    padding-left: 0;
+    /* Remove default padding for ul */
 }
 
 .contact-links li {
@@ -188,14 +247,18 @@ section#contact {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #2c3e50; /* Dark footer */
-    color: #bdc3c7; /* Light gray text */
+    background-color: #2c3e50;
+    /* Dark footer */
+    color: #bdc3c7;
+    /* Light gray text */
     font-size: 0.9em;
-    margin-top: 30px; /* Space above footer */
+    margin-top: 30px;
+    /* Space above footer */
 }
 
 footer .container {
-    padding: 10px 20px; /* Adjust padding if needed */
+    padding: 10px 20px;
+    /* Adjust padding if needed */
 }
 
 footer p {
@@ -203,9 +266,12 @@ footer p {
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) { /* For tablets and smaller */
+@media (max-width: 768px) {
+
+    /* For tablets and smaller */
     header .container {
-        flex-direction: column; /* Stack name and nav vertically */
+        flex-direction: column;
+        /* Stack name and nav vertically */
         text-align: center;
     }
 
@@ -214,13 +280,22 @@ footer p {
     }
 
     header nav ul li {
-        display: block; /* Stack nav links */
+        display: block;
+        /* Stack nav links */
         margin: 10px 0;
     }
 
-    h1 { font-size: 2em; }
-    h2 { font-size: 1.75em; }
-    h3 { font-size: 1.25em; }
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    h3 {
+        font-size: 1.25em;
+    }
 
     .projects-grid {
         /* Already responsive due to auto-fit, but you could force single column if preferred */
@@ -228,13 +303,17 @@ footer p {
     }
 }
 
-@media (max-width: 480px) { /* For mobile phones */
+@media (max-width: 480px) {
+
+    /* For mobile phones */
     .container {
-        width: 95%; /* Use more screen width on small devices */
+        width: 95%;
+        /* Use more screen width on small devices */
     }
 
     .button {
-        display: block; /* Make buttons full width for easier tapping */
+        display: block;
+        /* Make buttons full width for easier tapping */
         margin-right: 0;
         margin-bottom: 10px;
         text-align: center;

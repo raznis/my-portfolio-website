@@ -1,0 +1,284 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+    scroll-margin-block: 5ex;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Includes padding and border in the element's total width and height */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Smooth scrolling for #hash links */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Choose a clean, common font. Or explore Google Fonts later. */
+    line-height: 1.6;
+    /* Improves readability */
+    color: #333;
+    /* Dark gray, softer than pure black */
+    background-color: #f9f9f9;
+    /* Light off-white background */
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    /* Space below paragraphs */
+}
+
+img {
+    max-width: 100%;
+    /* Makes images responsive by default */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+
+#navbar {
+    background-color: #34495e;
+    /* Dark blue-gray background */
+    color: #ecf0f1;
+    /* Light text color */
+    position: sticky;
+    /* Makes the header stick to the top on scroll */
+    top: 0;
+    z-index: 1000;
+    padding: 1em 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Puts space between h1 and nav */
+    align-items: center;
+    /* Vertically aligns items in the middle */
+    padding: 0 20px;
+    /* Override container's top/bottom padding if needed */
+}
+
+header h1 {
+    margin-bottom: 0;
+    /* Remove default margin for h1 inside header */
+    font-size: 1.8em;
+    /* Adjust size for header context */
+    color: #ecf0f1;
+}
+
+header nav ul {
+    list-style: none;
+    /* Remove bullet points */
+}
+
+header nav ul li {
+    display: inline-block;
+    /* Arrange links horizontally */
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #bdc3c7;
+    /* Lighter color on hover */
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 0;
+    /* Add more vertical padding to sections */
+    /* .container inside section already handles horizontal padding/centering */
+}
+
+section#about div#aboutMe {
+    padding: 0px 1em;
+}
+
+.profile-photo {
+    /* If you added a photo */
+    display: block;
+    /* Or float: left; margin-right: 20px; */
+    max-width: 200px;
+    /* Adjust size */
+    border-radius: 50%;
+    /* Makes it circular */
+    margin: 0 auto 20px auto;
+    /* Centers it if it's a block element */
+}
+
+.button {
+    display: inline-block;
+    background-color: #3498db;
+    /* Primary button color */
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2459aa;
+    /* Darker shade on hover */
+    color: #ffffff;
+    text-decoration: none;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    height: 600px;
+    margin-bottom: 1em;
+
+}
+
+div#backgroundToIframe p {
+    display: inline;
+    margin-right: 1em;
+}
+
+div#backgroundToIframe {
+    background-color: #4270c5;
+    color: black;
+    padding: 2em;
+}
+
+a {
+    color: #3699db;
+    /* A clear blue for links */
+    text-decoration: none;
+    /* Remove underline by default */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Add underline on hover for clarity */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #969ba0;
+    color: #333e46;
+    /* Light gray text */
+    font-size: 0.9em;
+    margin-top: 30px;
+    /* Space above footer */
+}
+
+footer .container {
+    padding: 10px 20px;
+    /* Adjust padding if needed */
+}
+
+footer p {
+    margin-bottom: 0;
+}
