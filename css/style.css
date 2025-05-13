@@ -224,7 +224,7 @@ footer p {
 
     .projects-grid {
         /* Already responsive due to auto-fit, but you could force single column if preferred */
-        /* grid-template-columns: 1fr; */
+        grid-template-columns: 1fr;
     }
 }
 
