@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raz Nissim - Personal portfolio showcasing projects in AI, chatbots, and more.">
+    <title>Raz Nissim - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container"> <h1>Raz Nissim</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <p>My background is in computer science research. My Ph.D. was focused on automated planning, multi-agent systems, and algorithmic game-theory. While at Yahoo research, I worked on ad click-prediction modeling, and was responsible for online learning pipelines with a direct effect on revenue and >100M users. Since 2016, I'm at General Motors, where I have been hard at work building an awesome team of developers, system engineers, integration engineers, and SW validation engineers responsible for Simulation, Integration, and Testing efforts for the Ultracruise project and more. 
+            <br>More information and a full list of publications (with slides) can be found on my personal homepage (http://raznissim.wix.com/raznis).
+            <br>Specialties: Recommender systems, Click-Prediction, Artificial Intelligence, Automated Planning Systems, Multi-Agent Planning, Mechanism Design, AV simulation, AV validation/testing, SW validation/automation.</p>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project Title 1 (e.g., Customer Support Chatbot)</h3>
+                    <p>This chatbot uses [key model/technology] to assist with customer inquiries about X, Y, and Z. Built to explore [learning goal/problem solved].</p>
+                    <p><strong>Technologies:</strong> Python, Hugging Face Transformers, Gradio, Pandas</p>
+                    <div class="project-links">
+                        <a href="https://huggingface.co/spaces" target="_blank" rel="noopener noreferrer" class="button">Live Demo</a>
+                        <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories" target="_blank" rel="noopener noreferrer" class="button">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project Title 2</h3>
+                    <p>Description of project 2...</p>
+                    <p><strong>Technologies:</strong> JavaScript, HTML, CSS</p>
+                    <div class="project-links">
+                        <a href="[Demo Link]" target="_blank" rel="noopener noreferrer" class="button">Live Demo</a>
+                        <a href="[Code Link]" target="_blank" rel="noopener noreferrer" class="button">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of something exciting. Feel free to reach out!</p>
+            <ul class="contact-links">
+                <li>Email: <a href="mailto:raznissim@gmail.com">Email Me</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/raznis/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li>GitHub: <a href="https://github.com/raznis" target="_blank" rel="noopener noreferrer">Github</a></li>
+                <li>Hugging Face: <a href="https://huggingface.co/raznis" target="_blank" rel="noopener noreferrer">Hugging Face</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Raz Nissim. All rights reserved.</p>
+            <script>
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            </script>
+        </div>
+    </footer>
+</body>
+</html>
